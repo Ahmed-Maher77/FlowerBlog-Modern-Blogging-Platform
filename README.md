@@ -59,7 +59,7 @@ FlowerBlog is a modern, responsive blogging platform designed for flower and gar
 ## 📸 Website Preview
 
 <a href="https://ahmed-maher77.github.io/FlowerBlog-Modern-Blogging-Platform/" title="demo">
-  <img src="uploaded-img-on-github-readme" alt="website preview - Demo - UI Mockup" width="400">
+  <img src="https://github.com/user-attachments/assets/05cd54a4-fe15-43fd-bc4f-c5ddb7a23150" alt="website preview - Demo - UI Mockup" width="400">
 </a>
 
 ---
