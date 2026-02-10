@@ -1,0 +1,327 @@
+/* ========== GOOGLE FONTS ========== */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* ========== LOADER ========== */
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out;
+}
+
+.loader-wrapper.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loader {
+    text-align: center;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #0b5ed7;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader p {
+    color: #0b5ed7;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+html[data-bs-theme="dark"] .loader-wrapper {
+    background-color: rgba(26, 32, 44, 0.98);
+}
+
+html[data-bs-theme="dark"] .spinner {
+    border: 5px solid #2d3748;
+    border-top: 5px solid #5dade2;
+}
+
+html[data-bs-theme="dark"] .loader p {
+    color: #5dade2;
+}
+
+/* ========== SCROLL ANIMATIONS ========== */
+.scroll-animate {
+    opacity: 0;
+    transition: all 0.8s ease-out;
+}
+
+.scroll-animate.animate-visible {
+    opacity: 1;
+}
+
+.fade-up {
+    transform: translateY(50px);
+}
+.fade-up.animate-visible {
+    transform: translateY(0);
+}
+
+.fade-down {
+    transform: translateY(-50px);
+}
+.fade-down.animate-visible {
+    transform: translateY(0);
+}
+
+.fade-left {
+    transform: translateX(50px);
+}
+.fade-left.animate-visible {
+    transform: translateX(0);
+}
+
+.fade-right {
+    transform: translateX(-50px);
+}
+.fade-right.animate-visible {
+    transform: translateX(0);
+}
+
+.scale-up {
+    transform: scale(0.9);
+}
+.scale-up.animate-visible {
+    transform: scale(1);
+}
+
+.delay-1 {
+    transition-delay: 0.1s;
+}
+.delay-2 {
+    transition-delay: 0.2s;
+}
+.delay-3 {
+    transition-delay: 0.3s;
+}
+.delay-4 {
+    transition-delay: 0.4s;
+}
+.delay-5 {
+    transition-delay: 0.5s;
+}
+
+/* ========== BASE STYLES ========== */
+body {
+    font-family: "Noto Sans Georgian", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #f8f8f8af;
+}
+
+/* ========== CSS VARIABLES ========== */
+:root,
+html[data-bs-theme="light"] {
+    --blue-color: #0b5ed7;
+    --aside-bg-c: #eeeeee;
+    --black-bg: #222222;
+    --light-grey-color: #c8c8c8;
+    --white-color: #fff;
+    --grey-color: #5c5c5c;
+    --bg-grey: #f1f1f19c;
+}
+
+:root[data-bs-theme="dark"],
+html[data-bs-theme="dark"] {
+    --blue-color: #5dade2;
+    --aside-bg-c: #2d3748;
+    --black-bg: #1a202c;
+    --light-grey-color: #cbd5e1;
+    --white-color: #f8fafc;
+    --grey-color: #a0aec0;
+    --bg-grey: #2d374825;
+}
+
+/* ========== DARK MODE OVERRIDES ========== */
+html[data-bs-theme="dark"] body {
+    background-color: #1a202c;
+    color: #f8fafc;
+}
+
+html[data-bs-theme="dark"] #intro .card-img-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+html[data-bs-theme="dark"] #mainContent {
+    border-right-color: #4a5568;
+    box-shadow: 1px 0 0px 0px #2d3748;
+}
+
+html[data-bs-theme="dark"] #content aside > section {
+    box-shadow: 0px 1.5px 1px 0px #2d3748;
+}
+
+html[data-bs-theme="dark"] .text-black {
+    color: #f8fafc !important;
+}
+
+/* ========== UTILITY CLASSES ========== */
+.font-small {
+    font-size: 0.9rem !important;
+}
+.font-xs {
+    font-size: 0.75rem !important;
+}
+.font-light {
+    font-weight: 400 !important;
+}
+
+.grey-color {
+    color: var(--grey-color) !important;
+}
+.light-grey-color {
+    color: var(--light-grey-color) !important;
+    transition: color 0.3s ease;
+}
+a.light-grey-color:hover {
+    color: var(--white-color) !important;
+}
+.blue-color {
+    color: var(--blue-color) !important;
+}
+.bg-grey {
+    background-color: var(--bg-grey) !important;
+}
+.aside-bg-c {
+    background-color: var(--aside-bg-c) !important;
+}
+.black-bg {
+    background-color: var(--black-bg) !important;
+}
+
+.section-pd {
+    padding-block: 60px;
+}
+
+/* ========== NAVBAR ========== */
+.nav-link {
+    color: var(--grey-color) !important;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: var(--white-color) !important;
+}
+.theme-toggler {
+    width: 48px;
+    height: 48px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* ========== INTRO SECTION ========== */
+#intro .card {
+    height: 400px;
+}
+#intro .card img {
+    height: 100%;
+}
+
+#intro .card-img-overlay {
+    background: rgba(0, 0, 0, 0.174);
+}
+
+/* ========== MAIN CONTENT ========== */
+#mainContent {
+    border-right: 1px solid #d9d9d9;
+    box-shadow: 1px 0 0px 0px #c6c6c6;
+}
+
+.list-group-item {
+    background: transparent;
+    border: none;
+    padding-block: 2px 0;
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    text-indent: 5px;
+}
+#content .list-group-item a:hover {
+    color: var(--blue-color) !important;
+    text-decoration: underline !important;
+}
+#content aside > section {
+    box-shadow: 0px 1.5px 1px 0px #d8d8d8;
+}
+
+/* ========== FOOTER ========== */
+footer .list-group {
+    list-style: square !important;
+}
+
+.list-group.list-group-disc {
+    list-style: square;
+    padding-left: 2rem !important;
+}
+.list-group.list-group-disc > .list-group-item {
+    list-style: square;
+    display: list-item;
+    padding-left: 0px !important;
+}
+.list-group.list-group-disc > .list-group-item::marker {
+    color: var(--light-grey-color);
+}
+
+/* ========== COPYRIGHT FOOTER ========== */
+.copyright-footer {
+    background-color: var(--black-bg);
+    color: var(--white-color);
+    border-top: 3px solid var(--blue-color);
+}
+
+.copyright-footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.copyright-footer a {
+    color: var(--blue-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.copyright-footer a:hover {
+    color: var(--white-color);
+    text-decoration: underline;
+}
+
+.copyright-footer span {
+    font-size: 0.85rem;
+    color: var(--light-grey-color);
+}
+
+/* ========== RESPONSIVE (Desktop) ========== */
+@media (min-width: 992px) {
+    #intro .card header h2 {
+        font-size: 2.5rem;
+    }
+    .w-lg-50 {
+        width: 50% !important;
+    }
+}
