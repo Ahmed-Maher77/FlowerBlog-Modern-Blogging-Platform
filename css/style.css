@@ -130,6 +130,7 @@ body {
     font-family: "Noto Sans Georgian", sans-serif;
     font-optical-sizing: auto;
     background-color: #f8f8f8af;
+    overflow-x: hidden;
 }
 
 /* ========== CSS VARIABLES ========== */
