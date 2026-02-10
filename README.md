@@ -6,7 +6,7 @@ FlowerBlog is a modern, responsive blogging platform designed for flower and gar
 
 ## 🌐 Live Preview
 
-👀 **Watch Live Demo:** **[]()**
+👀 **Watch Live Demo:** **[https://ahmed-maher77.github.io/FlowerBlog-Modern-Blogging-Platform/](https://ahmed-maher77.github.io/FlowerBlog-Modern-Blogging-Platform/)**
 
 ---
 
@@ -58,7 +58,7 @@ FlowerBlog is a modern, responsive blogging platform designed for flower and gar
 
 ## 📸 Website Preview
 
-<a href="website-url" title="demo">
+<a href="https://ahmed-maher77.github.io/FlowerBlog-Modern-Blogging-Platform/" title="demo">
   <img src="uploaded-img-on-github-readme" alt="website preview - Demo - UI Mockup" width="400">
 </a>
 
@@ -70,18 +70,12 @@ FlowerBlog is a modern, responsive blogging platform designed for flower and gar
 flowerblog/
 │
 ├── index.html                    # Main HTML entry point with semantic structure
-│
 ├── css/
 │   └── style.css                 # Custom styles including animations, themes, and responsive design
-│
 ├── script.js                     # Core JavaScript functionality (loader, animations, theme toggle)
-│
 ├── packages/                     # Third-party libraries and frameworks
-│
 ├── images/                       # Visual assets and photography
-│
 ├── icons/                        # SVG icons and favicon assets
-│
 └── README.md                     # Project documentation
 ```
 
